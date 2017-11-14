@@ -10,7 +10,37 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>creational/factory method</module>
+        <module>structural/proxy</module>
     </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <!-- jdk 版本 -->
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!--解决maven test 的乱码问题-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <forkMode>once</forkMode>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <!--<systemProperties> -->
+                    <!--    <property> -->
+                    <!--        <name>net.sourceforge.cobertura.datafile</name> -->
+                    <!--        <value>target/cobertura/cobertura.ser</value> -->
+                    <!--    </property> -->
+                    <!--</systemProperties> -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
