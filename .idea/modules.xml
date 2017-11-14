@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/behavioral/command/command.iml" filepath="$PROJECT_DIR$/behavioral/command/command.iml" />
       <module fileurl="file://$PROJECT_DIR$/design pattern.iml" filepath="$PROJECT_DIR$/design pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/creational/factory method/factory method.iml" filepath="$PROJECT_DIR$/creational/factory method/factory method.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/proxy/proxy.iml" filepath="$PROJECT_DIR$/structural/proxy/proxy.iml" />
